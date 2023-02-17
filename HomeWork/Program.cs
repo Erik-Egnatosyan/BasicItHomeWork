@@ -44,7 +44,37 @@
             Console.Write("  #54\n");
             CalcMinNumber55();
             Console.Write("  #55\n");
-            Something56();
+            IfThreeIsDivTooOther56();
+            Console.Write("  #56\n");
+            something57();
+            Console.Write("  #57\n");
+            IfAPlusBlesserFive58();
+            Console.Write("  #58\n");
+            ToGreater59();
+            Console.Write("  #59\n");
+            ToLower60();
+            Console.Write("  #60\n");
+            IfTwoIsEqualAnotherTwo61();
+            Console.Write("  #61\n");
+            DivSecondAndFinalNumber62();
+            Console.Write("  #62\n");
+            IfHaveOneOrNot63();
+            Console.Write("  #63\n");
+            IfSecondAndFinalEqual64();
+            Console.Write("  #64\n");
+            IfThirdAndFinalEqualTwenty65();
+            Console.Write("  #65\n");
+            IfTheFirstAndTheFinalHaveFour66();
+            Console.Write("  #66\n");
+            IfSumEqualPowAllNumbers67();
+            Console.Write("  #67\n");
+            IfTowGreaterThenOtherTwo68();
+            Console.Write("  #68\n");
+            IfSumGreaterThenTwenty69();
+            Console.Write("  #69\n");
+            IfSumGreaterThenTwoHandread70();
+            Console.Write("  #70\n");
+            Console.ReadKey();
         }
         public static void MaxNumber21()
         {
@@ -289,7 +319,7 @@
             else
                 Console.Write("c is the smallest!");
         }
-        public static void Something56()
+        public static void IfThreeIsDivTooOther56()
         {
             float t = 132;
             float a = t / 100;
@@ -298,6 +328,159 @@
             float d = a + b + c;
             float z = d / t;
             Console.Write(c > b ? z : t);
+        }
+        public static void something57()
+        {
+            float t = 217;
+            float a = t / 100;
+            float b = (t / 10) % 10;
+            float c = t % 10;
+            Console.Write(t > 300 ? b / c : a / c);
+        }
+        public static void IfAPlusBlesserFive58()
+        {
+            char f;
+            int t = 347;
+            int a = t / 100;
+            int b = (t / 10) % 10;
+            int c = t % 10;
+            Console.Write(a + b < 5 ? f = 'a' : f = 'b');
+        }
+        public static void ToGreater59()
+        {
+            int t = 347;
+            int a = t / 100;
+            int b = (t / 10) % 10;
+            int c = t % 10;
+            if (a > b && a > c && b > c)
+                Console.Write($"{a},{b},{c}");
+            else if (a > c && a > b && c > b)
+                Console.Write($"{a},{c},{b}");
+            else if (b > c && b > a && c > a)
+                Console.Write($"{b},{c},{a}");
+            else if (b > a && b > c && a > c)
+                Console.Write($"{b},{a},{c}");
+            else if (c > a && c > b && a > b)
+                Console.Write($"{c},{a},{b}");
+            else
+                Console.Write($"{c},{b},{a}");
+        }
+        public static void ToLower60()
+        {
+            int t = 347;
+            int a = t / 100;
+            int b = (t / 10) % 10;
+            int c = t % 10;
+            if (a < b && a < c && b < c)
+                Console.Write($"{a},{b},{c}");
+            else if (a < c && a < b && c < b)
+                Console.Write($"{a},{c},{b}");
+            else if (b < c && b < a && c < a)
+                Console.Write($"{b},{c},{a}");
+            else if (b < a && b < c && a < c)
+                Console.Write($"{b},{a},{c}");
+            else if (c < a && c < b && a < b)
+                Console.Write($"{c},{a},{b}");
+            else
+                Console.Write($"{c},{b},{a}");
+        }
+        public static void IfTwoIsEqualAnotherTwo61()
+        {
+            int t = 1324;
+            int a = t / 1000;
+            int b = (t / 100) % 10;
+            int c = (t / 10) % 10;
+            int d = t % 10;
+            Console.Write(a + b == c + d ? true : false);
+        }
+        public static void DivSecondAndFinalNumber62()
+        {
+            int t = 1324;
+            int a = t / 1000;
+            int b = (t / 100) % 10;
+            int c = (t / 10) % 10;
+            int d = t % 10;
+            int e = (b + d != 0) ? t / (b + d) : 0;
+            int f = (a + c != 0) ? t / (a + c) : 0;
+            Console.Write(t < 5000 ? e : f);
+        }
+        public static void IfHaveOneOrNot63()
+        {
+            int t = 3424;
+            int a = t / 1000;
+            int b = (t / 100) % 10;
+            int c = (t / 10) % 10;
+            int d = t % 10;
+            Console.Write((a == 1 || b == 1 || c == 1 || d == 1) ? 1 : 0);
+        }
+        public static void IfSecondAndFinalEqual64()
+        {
+            char y;
+            int t = 3424;
+            int a = t / 1000;
+            int b = (t / 100) % 10;
+            int c = (t / 10) % 10;
+            int d = t % 10;
+            Console.Write(c+d == 5 ? y = 's' : y = 'd');
+        }
+        public static void IfThirdAndFinalEqualTwenty65()
+        {
+            int t = 3424;
+            int a = t / 1000;
+            int b = (t / 100) % 10;
+            int c = (t / 10) % 10;
+            int d = t % 10;
+            Console.Write(c * d == 12 ? "y=12" : "y=0");
+        }
+        public static void IfTheFirstAndTheFinalHaveFour66()
+        {
+            int t = 3424;
+            int a = t / 1000;
+            int b = (t / 100) % 10;
+            int c = (t / 10) % 10;
+            int d = t % 10;
+            Console.Write((a == 4 && c == 4) ? "YES" : "NO");
+        }
+        public static void IfSumEqualPowAllNumbers67()
+        {
+            int t = 3424;
+            int a = t / 1000;
+            int b = (t / 100) % 10;
+            int c = (t / 10) % 10;
+            int d = t % 10
+            int sum = a + b + c + d;
+            Console.Write((Math.Pow(sum,2) == t) ? "YES" : "NO");
+        }
+        public static void IfTowGreaterThenOtherTwo68()
+        {
+            int t = 3424;
+            int a = t / 1000;
+            int b = (t / 100) % 10;
+            int c = (t / 10) % 10;
+            int d = t % 10
+            Console.Write(d > c ? d * b : a * c);
+        }
+        public static void IfSumGreaterThenTwenty69()
+        {
+            int t = 3424;
+            int y;
+            int a = t / 1000;
+            int b = (t / 100) % 10;
+            int c = (t / 10) % 10;
+            int d = t % 10
+            int sum = a * b * c * d;
+            Console.Write(sum > 20 ? y = 1 : y = 0);
+        }
+        public static void IfSumGreaterThenTwoHandread70()
+        {
+            int t = 3424;
+            int y;
+            int a = t / 1000;
+            int b = (t / 100) % 10;
+            int c = (t / 10) % 10;
+            int d = t % 10
+            int sum = a * b * c * d;
+            Console.Write(sum > 200 ? y = 0 : y = 1);
         }
     }
 }
