@@ -74,6 +74,38 @@
             Console.Write("  #69\n");
             IfSumGreaterThenTwoHandread70();
             Console.Write("  #70\n");
+            Console.Write(PrintNumbersDividedN151(6));
+            Console.Write("  #151\n");
+            Console.Write(PrintNumbersMultiplayt152(6)); 
+            Console.Write("  #152\n");
+            Console.Write(IfRemainderEqualTwo153(6));
+            Console.Write("  #153\n");
+            Console.Write(IfRemainderEqualThree154(6));
+            Console.Write("  #154\n");
+            IfTheNumbersIsMultThree155();
+            Console.Write("  #155\n");
+            IfTheNumbersIsMultThreeAndFive156();
+            Console.Write("  #156\n");
+            AllNumbersWhoIsntMultFive157();
+            Console.Write("  #157\n");
+            AllNumbersWhoIsntMultTwoAndThree158();
+            Console.Write("  #158\n");
+            AllNumbersWhoMultFourAndThree159();
+            Console.Write("  #159\n");
+            TheSmalletInThreeNumber160();
+            Console.Write("  #160\n");
+            TheSmallestInFourNumber161();
+            Console.Write("  #161\n");
+            TheBiggestInFourNumber162();
+            Console.Write("  #162\n");
+            TheBiggestInFourNumber163();
+            Console.Write("  #163\n");
+            CheckTheNBiggerOrNO164(16); 
+            Console.Write("  #164\n");
+
+            Console.Write("  #165\n");
+
+            Console.Write("  #166\n");
             Console.ReadKey();
         }
         public static void MaxNumber21()
@@ -447,7 +479,7 @@
             int a = t / 1000;
             int b = (t / 100) % 10;
             int c = (t / 10) % 10;
-            int d = t % 10
+            int d = t % 10;
             int sum = a + b + c + d;
             Console.Write((Math.Pow(sum,2) == t) ? "YES" : "NO");
         }
@@ -457,7 +489,7 @@
             int a = t / 1000;
             int b = (t / 100) % 10;
             int c = (t / 10) % 10;
-            int d = t % 10
+            int d = t % 10;
             Console.Write(d > c ? d * b : a * c);
         }
         public static void IfSumGreaterThenTwenty69()
@@ -467,7 +499,7 @@
             int a = t / 1000;
             int b = (t / 100) % 10;
             int c = (t / 10) % 10;
-            int d = t % 10
+            int d = t % 10;
             int sum = a * b * c * d;
             Console.Write(sum > 20 ? y = 1 : y = 0);
         }
@@ -478,9 +510,179 @@
             int a = t / 1000;
             int b = (t / 100) % 10;
             int c = (t / 10) % 10;
-            int d = t % 10
+            int d = t % 10;
             int sum = a * b * c * d;
             Console.Write(sum > 200 ? y = 0 : y = 1);
+        }
+        public static int PrintNumbersDividedN151(int N)
+        {
+            int sum = 0;
+            for (int i = 1; i <= N; i++)
+            {
+                if (N % i == 0)
+                {
+                    sum += i;
+                }
+            }
+            return sum;
+        }
+        public static int PrintNumbersMultiplayt152(int N)
+        {
+            int sum = 1;
+            for (int i = 1; i <= N; i++)
+            {
+                if (N % i == 0)
+                {
+                    sum *= i;
+                }
+            }
+            return sum;
+        }
+        public static int IfRemainderEqualTwo153(int N)
+        {
+            int sum = 0;
+            for (int i = 1; i <= N; i++)
+            {
+                if (N % i == 2)
+                {
+                    sum += i;
+                }
+            }
+            return sum;
+        }
+        public static int IfRemainderEqualThree154(int N)
+        {
+            int sum = 1;
+            for (int i = 1; i <= N; i++)
+            {
+                if (N % i == 3)
+                {
+                    sum *= i;
+                }
+            }
+            return sum;
+        }
+        public static void IfTheNumbersIsMultThree155()
+        {
+            int sum = 0;
+            for (int i = 10; i <= 99; i++)
+            {
+                if (i % 3 == 0)
+                {
+                    sum += i;
+                }
+            }
+            Console.Write(sum);
+        }
+        public static void IfTheNumbersIsMultThreeAndFive156()
+        {
+            long sum = 1;
+            for (int i = 10; i <= 99; i++)
+            {
+                if ((i % 3 == 0) && (i % 5 == 0))
+                {
+                    sum *= i;
+                }
+            }
+            Console.Write(sum);
+        }
+        public static void AllNumbersWhoIsntMultFive157()
+        {
+            int sum = 0;
+            for (int i = 100; i <= 999; i++)
+            {
+                if (i % 5 != 0)
+                {
+                    sum += i;
+                }
+            }
+            Console.Write(sum);
+        }
+        public static void AllNumbersWhoIsntMultTwoAndThree158()
+        {
+            long sum = 1;
+            for (int i = 100; i <= 999; i++)
+            {
+                if ((i % 2 != 0) && (i % 3 != 0))
+                {
+                    sum *= i;
+                }
+            }
+            Console.Write(sum);
+        }
+        public static void AllNumbersWhoMultFourAndThree159()
+        {
+            double sum = 1;
+            for (int i = 100; i <= 999; i++)
+            {
+                if ((i % 3 == 1) && (i % 4 == 2))
+                {
+                    sum *= i;
+                }
+            }
+            Console.Write(sum);
+        }
+        public static void TheSmalletInThreeNumber160()
+        {
+            int i = 101;
+            while (true)
+            {
+                if (Math.Sqrt(i*16)%1 == 0)
+                {
+                    Console.Write(i);
+                    break;
+                }
+                i++;
+            }   
+        }
+        public static void TheSmallestInFourNumber161()
+        {
+            int i = 1000;
+            while (true)
+            {
+                if (Math.Sqrt(i * 26) % 1 == 0)
+                {
+                    Console.Write(i);
+                    break;
+                }
+                i++;
+            }
+        }
+        public static void TheBiggestInFourNumber162()
+        {
+            int i = 9999;
+            while (true)
+            {
+                if (Math.Sqrt(i * 14) % 1 == 0)
+                {
+                    Console.Write(i);
+                    break;
+                }
+                i--;
+            }
+        }
+        public static void TheBiggestInFourNumber163()
+        {
+            int i = 9999;
+            while (true)
+            {
+                if (Math.Sqrt(i * 18) % 1 == 0)
+                {
+                    Console.Write(i);
+                    break;
+                }
+                i--;
+            }
+        }
+        public static double CheckTheNBiggerOrNO164(double N)
+        {
+            double i = 100;
+            double d = Math.Sqrt(Math.Pow(N, 2));
+            while (true)
+            {
+                return d;
+                break;
+            }
         }
     }
 }
