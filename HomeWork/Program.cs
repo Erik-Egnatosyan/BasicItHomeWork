@@ -102,9 +102,9 @@
             Console.Write("  #163\n");
             CheckTheNBiggerOrNO164(16); 
             Console.Write("  #164\n");
-
+            Console.Write(CheckIfTheNNumberIsThreeSquare165(9)); 
             Console.Write("  #165\n");
-
+            Console.Write(CheckIfTheNNumberIsNotFourSquare166(27));
             Console.Write("  #166\n");
             Console.ReadKey();
         }
@@ -683,6 +683,16 @@
                 return d;
                 break;
             }
+        }
+        public static bool CheckIfTheNNumberIsThreeSquare165(double N)
+        {
+            bool t;
+            return((Math.Sqrt(N) == 3) ? t = true : t = false);
+        }
+        public static int CheckIfTheNNumberIsNotFourSquare166(double N)
+        {
+            int y;
+            return ((Math.Sqrt(N) != 4) ? y = 0 : y = 1);
         }
     }
 }
