@@ -76,7 +76,7 @@
             Console.Write("  #70\n");
             Console.Write(PrintNumbersDividedN151(6));
             Console.Write("  #151\n");
-            Console.Write(PrintNumbersMultiplayt152(6)); 
+            Console.Write(PrintNumbersMultiplayt152(6));
             Console.Write("  #152\n");
             Console.Write(IfRemainderEqualTwo153(6));
             Console.Write("  #153\n");
@@ -100,12 +100,28 @@
             Console.Write("  #162\n");
             TheBiggestInFourNumber163();
             Console.Write("  #163\n");
-            CheckTheNBiggerOrNO164(16); 
+            CheckTheNBiggerOrNO164(16);
             Console.Write("  #164\n");
-            Console.Write(CheckIfTheNNumberIsThreeSquare165(9)); 
+            Console.Write(CheckIfTheNNumberIsThreeSquare165(9));
             Console.Write("  #165\n");
             Console.Write(CheckIfTheNNumberIsNotFourSquare166(27));
             Console.Write("  #166\n");
+            ArrayAverage211();
+            Console.Write("  #211\n");
+            ArrayAverageMult212();
+            Console.Write("  #212\n");
+            ArrayAverageMultMinus213();
+            Console.Write("  #213\n");
+            ArrayAverageMinus214();
+            Console.Write("  #214\n");
+            ArrayDoubleSum215();
+            Console.Write("  #215\n");
+            ArrayDoubleMult216();
+            Console.Write("  #216\n");
+            ArraySoloMult217();
+            Console.Write("  #217\n");
+            ArraySoloABS218();
+            Console.Write("  #218\n");
             Console.ReadKey();
         }
         public static void MaxNumber21()
@@ -453,7 +469,7 @@
             int b = (t / 100) % 10;
             int c = (t / 10) % 10;
             int d = t % 10;
-            Console.Write(c+d == 5 ? y = 's' : y = 'd');
+            Console.Write(c + d == 5 ? y = 's' : y = 'd');
         }
         public static void IfThirdAndFinalEqualTwenty65()
         {
@@ -481,7 +497,7 @@
             int c = (t / 10) % 10;
             int d = t % 10;
             int sum = a + b + c + d;
-            Console.Write((Math.Pow(sum,2) == t) ? "YES" : "NO");
+            Console.Write((Math.Pow(sum, 2) == t) ? "YES" : "NO");
         }
         public static void IfTowGreaterThenOtherTwo68()
         {
@@ -627,13 +643,13 @@
             int i = 101;
             while (true)
             {
-                if (Math.Sqrt(i*16)%1 == 0)
+                if (Math.Sqrt(i * 16) % 1 == 0)
                 {
                     Console.Write(i);
                     break;
                 }
                 i++;
-            }   
+            }
         }
         public static void TheSmallestInFourNumber161()
         {
@@ -687,12 +703,116 @@
         public static bool CheckIfTheNNumberIsThreeSquare165(double N)
         {
             bool t;
-            return((Math.Sqrt(N) == 3) ? t = true : t = false);
+            return ((Math.Sqrt(N) == 3) ? t = true : t = false);
         }
         public static int CheckIfTheNNumberIsNotFourSquare166(double N)
         {
             int y;
             return ((Math.Sqrt(N) != 4) ? y = 0 : y = 1);
+        }
+        public static void ArrayAverage211()
+        {
+            int[] numerSort = new int[] { 5, 5, 5, 5, 5 };
+            int sum = 0;
+            for (int i = 0; i < numerSort.Length; i++)
+            {
+                if (numerSort[i] > 0)
+                {
+                    sum += numerSort[i];
+                }
+            }
+            Console.Write(sum / numerSort.Length);
+        }
+        public static void ArrayAverageMult212()
+        {
+            int[] numerSort = new int[] { 2, 4, 8 };
+            int sum = 1;
+            for (int i = 0; i < numerSort.Length; i++)
+            {
+                if (numerSort[i] > 0)
+                {
+                    sum *= numerSort[i];
+                }
+            }
+            Console.Write(Math.Round(Math.Pow(sum, (1f / numerSort.Length))));
+        }
+        public static void ArrayAverageMultMinus213()
+        {
+            int[] numerSort = new int[] { -2, -4, -8 };
+            int sum = 1;
+            for (int i = 0; i < numerSort.Length; i++)
+            {
+                if (numerSort[i] < 0)
+                {
+                    sum *= numerSort[i];
+                }
+            }
+            Console.Write(Math.Round(Math.Pow(sum, (1 / numerSort.Length))));
+        }
+        public static void ArrayAverageMinus214()
+        {
+            int[] numerSort = new int[] { -5, 5, -5, 5, -5 };
+            int sum = 0;
+            for (int i = 0; i < numerSort.Length; i++)
+            {
+                if (numerSort[i] > 0)
+                {
+                    sum += numerSort[i];
+                }
+            }
+            Console.Write(sum / numerSort.Length);
+        }
+        public static void ArrayDoubleSum215()
+        {
+            int[] numerSort = new int[] { 2, 4, 5, 7, 8, 5, 9, 1 };
+            int sum = 0;
+            for (int i = 0; i < numerSort.Length; i++)
+            {
+                if (numerSort[i] % 2 == 0)
+                {
+                    sum += numerSort[i];
+                }
+            }
+            Console.Write(sum);
+        }
+        public static void ArrayDoubleMult216()
+        {
+            int[] numerSort = new int[] { 2, 4, 5, 7, 8, 5, 9, 1 };
+            int sum = 1;
+            for (int i = 0; i < numerSort.Length; i++)
+            {
+                if (numerSort[i] % 2 == 0)
+                {
+                    sum *= numerSort[i];
+                }
+            }
+            Console.Write(sum);
+        }
+        public static void ArraySoloMult217()
+        {
+            int[] numerSort = new int[] { 2, 4, 5, 7, 8, 5, 9, 1 };
+            double sum = 1;
+            for (int i = 0; i < numerSort.Length; i++)
+            {
+                if (numerSort[i] % 2 != 0)
+                {
+                    sum *= Math.Pow(numerSort[i], 2);
+                }
+            }
+            Console.Write(sum);
+        }
+        public static void ArraySoloABS218()
+        {
+            int[] numerSort = new int[] { 2, 4, 5, 7, 8, 5, 9, 1 };
+            int sum = 1;
+            for (int i = 0; i < numerSort.Length; i++)
+            {
+                if (numerSort[i] % 2 != 0)
+                {
+                    sum += Math.Abs(numerSort[i]);
+                }
+            }
+            Console.Write(sum);
         }
     }
 }
