@@ -4,8 +4,9 @@
     {
         static void Main(string[] args)
         {
-            BankConvert bankConvert = new BankConvert();
-            bankConvert.Hashiv(5247);
+            KakoytoBank kakoytoBank = new KakoytoBank();
+            Console.WriteLine(kakoytoBank.Choice(1,5000));
+            kakoytoBank.Hashiv(124514);
         }
     }
 }
